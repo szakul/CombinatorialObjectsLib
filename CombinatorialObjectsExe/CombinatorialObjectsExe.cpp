@@ -50,37 +50,6 @@ int rek(int i)
 
 int main()
 {
-	/*
-	std::set<char> Elements = { 'A', 'B', 'C', 'D', 'E', '1', '2', '3', '4' };
-	VariationGenerator_wReps<char> _Generator(Elements);
-	std::vector<char> VEC = _Generator.GenerateNthVariation(0, 10);
-
-	for (int i = 0; i < _Generator.NumberOfAllVariations(10); i++)
-	{
-		show(_Generator.GenerateNthVariation(i, 10));	
-	}
-	
-
-	PositionalNumeralSystem<2> A;
-	show(A.getRepresentation(300));
-	NaturalNumberRepresentation a(300, 3, new PositionalNumeralSystem<10>());
-	a.operator--();
-
-	BinaryNumeralSystem E;
-	show(E.getRepresentation(300));
-	NaturalNumberRepresentation b(6);
-	b.operator--();
-	*/
-
-
-
-
-
-	
-
-
-	
-	//show(_Generator.GenerateAllPermutations());
 	system("pause");
     return 0;
 }

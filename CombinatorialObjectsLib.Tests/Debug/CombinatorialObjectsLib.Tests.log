@@ -1,52 +1,78 @@
-﻿  PermutationGenerator_Lexicographic_noReps.cpp
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\permutationgenerator_lexicographic_noreps.h(34): error C3083: 'Codes': the symbol to the left of a '::' must be a type
-  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\permutationgenerator_lexicographic_noreps.h(28): note: while compiling class template member function 'std::vector<char,std::allocator<char>> CombinatorialObjects::PermutationGenerator_Lexicographic_noReps<char>::GenerateNthPermutation(unsigned __int64) const'
-  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\permutationgenerator_lexicographic_noreps.cpp(22): note: see reference to function template instantiation 'std::vector<char,std::allocator<char>> CombinatorialObjects::PermutationGenerator_Lexicographic_noReps<char>::GenerateNthPermutation(unsigned __int64) const' being compiled
-  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\permutationgenerator_lexicographic_noreps.cpp(21): note: see reference to class template instantiation 'CombinatorialObjects::PermutationGenerator_Lexicographic_noReps<char>' being compiled
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\permutationgenerator_lexicographic_noreps.h(34): error C2039: 'uIntToFactoradic': is not a member of 'CombinatorialObjects::Extras'
-  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\codes.h(7): note: see declaration of 'CombinatorialObjects::Extras'
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\permutationgenerator_lexicographic_noreps.h(34): error C3861: 'uIntToFactoradic': identifier not found
-  PermutationGenerator_AntiLexicographic_noReps.cpp
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\permutationgenerator_antilexicographic_noreps.h(34): error C3083: 'Codes': the symbol to the left of a '::' must be a type
-  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\permutationgenerator_antilexicographic_noreps.h(28): note: while compiling class template member function 'std::vector<char,std::allocator<char>> CombinatorialObjects::PermutationGenerator_Antilexicographic_noReps<char>::GenerateNthPermutation(unsigned __int64) const'
-  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\permutationgenerator_antilexicographic_noreps.cpp(20): note: see reference to function template instantiation 'std::vector<char,std::allocator<char>> CombinatorialObjects::PermutationGenerator_Antilexicographic_noReps<char>::GenerateNthPermutation(unsigned __int64) const' being compiled
-  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\permutationgenerator_antilexicographic_noreps.cpp(19): note: see reference to class template instantiation 'CombinatorialObjects::PermutationGenerator_Antilexicographic_noReps<char>' being compiled
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\permutationgenerator_antilexicographic_noreps.h(34): error C2039: 'uIntToFactoradic': is not a member of 'CombinatorialObjects::Extras'
-  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\codes.h(7): note: see declaration of 'CombinatorialObjects::Extras'
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\permutationgenerator_antilexicographic_noreps.h(34): error C3861: 'uIntToFactoradic': identifier not found
-  Extras.cpp
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\extras.cpp(51): error C2653: 'Codes': is not a class or namespace name
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\extras.cpp(51): error C3861: 'uIntToBinaryCode': identifier not found
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\extras.cpp(56): error C2653: 'Codes': is not a class or namespace name
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\extras.cpp(56): error C3861: 'uIntToFactoradic': identifier not found
-  CombinationGenerator_noReps.cpp
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\combinationgenerator_noreps.h(68): error C2039: 'BinarySequences': is not a member of 'CombinatorialObjects::Extras'
-  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\codes.h(7): note: see declaration of 'CombinatorialObjects::Extras'
-  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\combinationgenerator_noreps.h(65): note: while compiling class template member function 'std::set<std::set<char,std::less<_Kty>,std::allocator<char>>,std::less<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>,std::allocator<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>> CombinatorialObjects::CombinationGenerator_noReps<char>::GenerateAllSubsets(void) const'
+﻿  CombinationGenerator_noReps.cpp
+c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\combinationgenerator_noreps.h(68): warning C4267: 'argument': conversion from 'size_t' to 'unsigned short', possible loss of data
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\combinationgenerator_noreps.h(65): note: while compiling class template member function 'std::set<std::set<char,std::less<_Kty>,std::allocator<char>>,std::less<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>,std::allocator<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>> CombinatorialObjects::CombinationGenerator_noReps<char>::GenerateAllSubsets(void) const'
           with
           [
               _Kty=char
           ]
-  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\combinationgenerator_noreps.cpp(102): note: see reference to function template instantiation 'std::set<std::set<char,std::less<_Kty>,std::allocator<char>>,std::less<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>,std::allocator<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>> CombinatorialObjects::CombinationGenerator_noReps<char>::GenerateAllSubsets(void) const' being compiled
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib.tests\combinationgenerator_noreps.cpp(102): note: see reference to function template instantiation 'std::set<std::set<char,std::less<_Kty>,std::allocator<char>>,std::less<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>,std::allocator<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>> CombinatorialObjects::CombinationGenerator_noReps<char>::GenerateAllSubsets(void) const' being compiled
           with
           [
               _Kty=char
           ]
-  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\combinationgenerator_noreps.cpp(28): note: see reference to class template instantiation 'CombinatorialObjects::CombinationGenerator_noReps<char>' being compiled
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\combinationgenerator_noreps.h(68): error C2064: term does not evaluate to a function taking 1 arguments
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\combinationgenerator_noreps.h(70): warning C4018: '<': signed/unsigned mismatch
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\combinationgenerator_noreps.h(141): error C3083: 'Codes': the symbol to the left of a '::' must be a type
-  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\combinationgenerator_noreps.h(134): note: while compiling class template member function 'std::set<std::set<char,std::less<_Kty>,std::allocator<char>>,std::less<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>,std::allocator<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>> CombinatorialObjects::CombinationGenerator_noReps<char>::GenerateAllCombinations(unsigned int) const'
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib.tests\combinationgenerator_noreps.cpp(28): note: see reference to class template instantiation 'CombinatorialObjects::CombinationGenerator_noReps<char>' being compiled
+c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\combinationgenerator_noreps.h(70): warning C4018: '<': signed/unsigned mismatch
+c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\combinationgenerator_noreps.h(20): warning C4018: '<': signed/unsigned mismatch
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\combinationgenerator_noreps.h(13): note: while compiling class template member function 'std::set<char,std::less<_Kty>,std::allocator<char>> CombinatorialObjects::CombinationGenerator_noReps<char>::GetSubset(std::set<_Kty,std::less<_Kty>,std::allocator<char>>,std::vector<bool,std::allocator<_Ty>>)'
+          with
+          [
+              _Kty=char,
+              _Ty=bool
+          ]
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\combinationgenerator_noreps.h(89): note: see reference to function template instantiation 'std::set<char,std::less<_Kty>,std::allocator<char>> CombinatorialObjects::CombinationGenerator_noReps<char>::GetSubset(std::set<_Kty,std::less<_Kty>,std::allocator<char>>,std::vector<bool,std::allocator<_Ty>>)' being compiled
+          with
+          [
+              _Kty=char,
+              _Ty=bool
+          ]
+c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\combinationgenerator_noreps.h(50): warning C4018: '<=': signed/unsigned mismatch
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\combinationgenerator_noreps.h(48): note: while compiling class template member function 'size_t CombinatorialObjects::CombinationGenerator_noReps<char>::NumberOfAllSubsets(void) const'
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\combinationgenerator_noreps.h(81): note: see reference to function template instantiation 'size_t CombinatorialObjects::CombinationGenerator_noReps<char>::NumberOfAllSubsets(void) const' being compiled
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\combinationgenerator_noreps.h(87): note: while compiling class template member function 'std::set<char,std::less<_Kty>,std::allocator<char>> CombinatorialObjects::CombinationGenerator_noReps<char>::GenerateNthSubset(unsigned int) const'
           with
           [
               _Kty=char
           ]
-  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\combinationgenerator_noreps.cpp(110): note: see reference to function template instantiation 'std::set<std::set<char,std::less<_Kty>,std::allocator<char>>,std::less<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>,std::allocator<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>> CombinatorialObjects::CombinationGenerator_noReps<char>::GenerateAllCombinations(unsigned int) const' being compiled
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib.tests\combinationgenerator_noreps.cpp(30): note: see reference to function template instantiation 'std::set<char,std::less<_Kty>,std::allocator<char>> CombinatorialObjects::CombinationGenerator_noReps<char>::GenerateNthSubset(unsigned int) const' being compiled
           with
           [
               _Kty=char
           ]
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\combinationgenerator_noreps.h(141): error C2039: 'ModifiedGrayCode': is not a member of 'CombinatorialObjects::Extras'
-  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\codes.h(7): note: see declaration of 'CombinatorialObjects::Extras'
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\combinationgenerator_noreps.h(141): error C3861: 'ModifiedGrayCode': identifier not found
   Generating Code...
+  Compiling...
+  VariationGenerator_wReps.cpp
+c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib.tests\variationgenerator_wreps.cpp(13): warning C4002: too many actual parameters for macro 'BEGIN_TEST_CLASS_ATTRIBUTE'
+c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\variationgenerator_wreps.h(77): warning C4244: '=': conversion from 'unsigned __int64' to 'std::size_t', possible loss of data
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\variationgenerator_wreps.h(64): note: while compiling class template member function 'std::vector<char,std::allocator<char>> CombinatorialObjects::VariationGenerator_wReps<char>::GenerateNthVariation(unsigned int,unsigned int) const'
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib.tests\variationgenerator_wreps.cpp(77): note: see reference to function template instantiation 'std::vector<char,std::allocator<char>> CombinatorialObjects::VariationGenerator_wReps<char>::GenerateNthVariation(unsigned int,unsigned int) const' being compiled
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib.tests\variationgenerator_wreps.cpp(38): note: see reference to class template instantiation 'CombinatorialObjects::VariationGenerator_wReps<char>' being compiled
+c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\variationgenerator_wreps.h(78): warning C4018: '<': signed/unsigned mismatch
+c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\variationgenerator_wreps.h(44): warning C4018: '<': signed/unsigned mismatch
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\variationgenerator_wreps.h(31): note: while compiling class template member function 'std::vector<std::vector<char,std::allocator<char>>,std::allocator<_Ty>> CombinatorialObjects::VariationGenerator_wReps<char>::GenerateAllVariations(unsigned int) const'
+          with
+          [
+              _Ty=std::vector<char,std::allocator<char>>
+          ]
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib.tests\variationgenerator_wreps.cpp(39): note: see reference to function template instantiation 'std::vector<std::vector<char,std::allocator<char>>,std::allocator<_Ty>> CombinatorialObjects::VariationGenerator_wReps<char>::GenerateAllVariations(unsigned int) const' being compiled
+          with
+          [
+              _Ty=std::vector<char,std::allocator<char>>
+          ]
+c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\variationgenerator_wreps.h(17): warning C4244: 'return': conversion from 'double' to 'unsigned __int64', possible loss of data
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\variationgenerator_wreps.h(17): note: while compiling class template member function 'unsigned __int64 CombinatorialObjects::VariationGenerator_wReps<char>::NumberOfAllVariations(unsigned int) const'
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\variationgenerator_wreps.h(70): note: see reference to function template instantiation 'unsigned __int64 CombinatorialObjects::VariationGenerator_wReps<char>::NumberOfAllVariations(unsigned int) const' being compiled
+  PermutationGenerator_Lexicographic_noReps.cpp
+c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\permutationgenerator_lexicographic_noreps.h(35): warning C4244: 'argument': conversion from 'unsigned __int64' to 'unsigned long', possible loss of data
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\permutationgenerator_lexicographic_noreps.h(29): note: while compiling class template member function 'std::vector<char,std::allocator<char>> CombinatorialObjects::PermutationGenerator_Lexicographic_noReps<char>::GenerateNthPermutation(unsigned __int64) const'
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib.tests\permutationgenerator_lexicographic_noreps.cpp(22): note: see reference to function template instantiation 'std::vector<char,std::allocator<char>> CombinatorialObjects::PermutationGenerator_Lexicographic_noReps<char>::GenerateNthPermutation(unsigned __int64) const' being compiled
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib.tests\permutationgenerator_lexicographic_noreps.cpp(21): note: see reference to class template instantiation 'CombinatorialObjects::PermutationGenerator_Lexicographic_noReps<char>' being compiled
+  PermutationGenerator_AntiLexicographic_noReps.cpp
+c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\permutationgenerator_antilexicographic_noreps.h(34): warning C4244: 'argument': conversion from 'unsigned __int64' to 'unsigned long', possible loss of data
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib\permutationgenerator_antilexicographic_noreps.h(28): note: while compiling class template member function 'std::vector<char,std::allocator<char>> CombinatorialObjects::PermutationGenerator_Antilexicographic_noReps<char>::GenerateNthPermutation(unsigned __int64) const'
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib.tests\permutationgenerator_antilexicographic_noreps.cpp(20): note: see reference to function template instantiation 'std::vector<char,std::allocator<char>> CombinatorialObjects::PermutationGenerator_Antilexicographic_noReps<char>::GenerateNthPermutation(unsigned __int64) const' being compiled
+  c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectslib.tests\permutationgenerator_antilexicographic_noreps.cpp(19): note: see reference to class template instantiation 'CombinatorialObjects::PermutationGenerator_Antilexicographic_noReps<char>' being compiled
+  Extras.cpp
+  Generating Code...
+     Creating library C:\Users\Łukasz Kępka\Source\Repos\CombinatorialObjectsLib\Debug\CombinatorialObjectsLib.Tests.lib and object C:\Users\Łukasz Kępka\Source\Repos\CombinatorialObjectsLib\Debug\CombinatorialObjectsLib.Tests.exp
+  CombinatorialObjectsLib.Tests.vcxproj -> C:\Users\Łukasz Kępka\Source\Repos\CombinatorialObjectsLib\Debug\CombinatorialObjectsLib.Tests.dll
+  CombinatorialObjectsLib.Tests.vcxproj -> C:\Users\Łukasz Kępka\Source\Repos\CombinatorialObjectsLib\Debug\CombinatorialObjectsLib.Tests.pdb (Partial PDB)
