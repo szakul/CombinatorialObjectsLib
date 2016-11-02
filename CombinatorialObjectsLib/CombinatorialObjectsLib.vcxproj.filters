@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Extras">
+      <UniqueIdentifier>{794aabc5-37c9-4480-bc41-d3b4c4e08323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Extras">
+      <UniqueIdentifier>{e6c1e896-f134-492f-a121-e7f01e1b6627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Extras\NumberRepresentation">
+      <UniqueIdentifier>{e1d9b827-76a6-42d3-aa89-1b0906821c24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Extras\NumberRepresentation">
+      <UniqueIdentifier>{27612b54-c056-4307-813d-2cde9503a734}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Extras\MathFormulas">
+      <UniqueIdentifier>{2893e670-1446-4a29-b6e3-52f669dbcd86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Extras\MathFormulas">
+      <UniqueIdentifier>{33e7ee0c-56ba-45e0-8d76-a86dc6945176}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Generators">
+      <UniqueIdentifier>{f39d7e66-f525-4152-b79a-d36f3c5e45c7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NaturalNumberRepresentation.h">
+      <Filter>Header Files\Extras\NumberRepresentation</Filter>
+    </ClInclude>
+    <ClInclude Include="Factoradic.h">
+      <Filter>Header Files\Extras\NumberRepresentation</Filter>
+    </ClInclude>
+    <ClInclude Include="NumeralSystem.h">
+      <Filter>Header Files\Extras\NumberRepresentation</Filter>
+    </ClInclude>
+    <ClInclude Include="PositionalNumeralSystem.h">
+      <Filter>Header Files\Extras\NumberRepresentation</Filter>
+    </ClInclude>
+    <ClInclude Include="MathFormulas.h">
+      <Filter>Header Files\Extras\MathFormulas</Filter>
+    </ClInclude>
+    <ClInclude Include="VariationGenerator_wReps.h">
+      <Filter>Header Files\Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="PermutationGenerator_Lexicographic_noReps.h">
+      <Filter>Header Files\Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="PermutationGenerator_Antilexicographic_noReps.h">
+      <Filter>Header Files\Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="CombinatorialObjectsLib.h">
+      <Filter>Header Files\Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="CombinationGenerator_wReps.h">
+      <Filter>Header Files\Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="CombinationGenerator_noReps.h">
+      <Filter>Header Files\Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="Codes.h">
+      <Filter>Header Files\Extras\NumberRepresentation</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Factoradic.cpp">
+      <Filter>Source Files\Extras\NumberRepresentation</Filter>
+    </ClCompile>
+    <ClCompile Include="NaturalNumberRepresentation.cpp">
+      <Filter>Source Files\Extras\NumberRepresentation</Filter>
+    </ClCompile>
+    <ClCompile Include="MathFormulas.cpp">
+      <Filter>Source Files\Extras\MathFormulas</Filter>
+    </ClCompile>
+    <ClCompile Include="Codes.cpp">
+      <Filter>Source Files\Extras\NumberRepresentation</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,52 @@
+﻿  PermutationGenerator_Lexicographic_noReps.cpp
+d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\permutationgenerator_lexicographic_noreps.h(34): error C3083: 'Codes': the symbol to the left of a '::' must be a type
+  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\permutationgenerator_lexicographic_noreps.h(28): note: while compiling class template member function 'std::vector<char,std::allocator<char>> CombinatorialObjects::PermutationGenerator_Lexicographic_noReps<char>::GenerateNthPermutation(unsigned __int64) const'
+  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\permutationgenerator_lexicographic_noreps.cpp(22): note: see reference to function template instantiation 'std::vector<char,std::allocator<char>> CombinatorialObjects::PermutationGenerator_Lexicographic_noReps<char>::GenerateNthPermutation(unsigned __int64) const' being compiled
+  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\permutationgenerator_lexicographic_noreps.cpp(21): note: see reference to class template instantiation 'CombinatorialObjects::PermutationGenerator_Lexicographic_noReps<char>' being compiled
+d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\permutationgenerator_lexicographic_noreps.h(34): error C2039: 'uIntToFactoradic': is not a member of 'CombinatorialObjects::Extras'
+  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\codes.h(7): note: see declaration of 'CombinatorialObjects::Extras'
+d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\permutationgenerator_lexicographic_noreps.h(34): error C3861: 'uIntToFactoradic': identifier not found
+  PermutationGenerator_AntiLexicographic_noReps.cpp
+d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\permutationgenerator_antilexicographic_noreps.h(34): error C3083: 'Codes': the symbol to the left of a '::' must be a type
+  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\permutationgenerator_antilexicographic_noreps.h(28): note: while compiling class template member function 'std::vector<char,std::allocator<char>> CombinatorialObjects::PermutationGenerator_Antilexicographic_noReps<char>::GenerateNthPermutation(unsigned __int64) const'
+  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\permutationgenerator_antilexicographic_noreps.cpp(20): note: see reference to function template instantiation 'std::vector<char,std::allocator<char>> CombinatorialObjects::PermutationGenerator_Antilexicographic_noReps<char>::GenerateNthPermutation(unsigned __int64) const' being compiled
+  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\permutationgenerator_antilexicographic_noreps.cpp(19): note: see reference to class template instantiation 'CombinatorialObjects::PermutationGenerator_Antilexicographic_noReps<char>' being compiled
+d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\permutationgenerator_antilexicographic_noreps.h(34): error C2039: 'uIntToFactoradic': is not a member of 'CombinatorialObjects::Extras'
+  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\codes.h(7): note: see declaration of 'CombinatorialObjects::Extras'
+d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\permutationgenerator_antilexicographic_noreps.h(34): error C3861: 'uIntToFactoradic': identifier not found
+  Extras.cpp
+d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\extras.cpp(51): error C2653: 'Codes': is not a class or namespace name
+d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\extras.cpp(51): error C3861: 'uIntToBinaryCode': identifier not found
+d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\extras.cpp(56): error C2653: 'Codes': is not a class or namespace name
+d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\extras.cpp(56): error C3861: 'uIntToFactoradic': identifier not found
+  CombinationGenerator_noReps.cpp
+d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\combinationgenerator_noreps.h(68): error C2039: 'BinarySequences': is not a member of 'CombinatorialObjects::Extras'
+  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\codes.h(7): note: see declaration of 'CombinatorialObjects::Extras'
+  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\combinationgenerator_noreps.h(65): note: while compiling class template member function 'std::set<std::set<char,std::less<_Kty>,std::allocator<char>>,std::less<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>,std::allocator<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>> CombinatorialObjects::CombinationGenerator_noReps<char>::GenerateAllSubsets(void) const'
+          with
+          [
+              _Kty=char
+          ]
+  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\combinationgenerator_noreps.cpp(102): note: see reference to function template instantiation 'std::set<std::set<char,std::less<_Kty>,std::allocator<char>>,std::less<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>,std::allocator<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>> CombinatorialObjects::CombinationGenerator_noReps<char>::GenerateAllSubsets(void) const' being compiled
+          with
+          [
+              _Kty=char
+          ]
+  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\combinationgenerator_noreps.cpp(28): note: see reference to class template instantiation 'CombinatorialObjects::CombinationGenerator_noReps<char>' being compiled
+d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\combinationgenerator_noreps.h(68): error C2064: term does not evaluate to a function taking 1 arguments
+d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\combinationgenerator_noreps.h(70): warning C4018: '<': signed/unsigned mismatch
+d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\combinationgenerator_noreps.h(141): error C3083: 'Codes': the symbol to the left of a '::' must be a type
+  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\combinationgenerator_noreps.h(134): note: while compiling class template member function 'std::set<std::set<char,std::less<_Kty>,std::allocator<char>>,std::less<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>,std::allocator<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>> CombinatorialObjects::CombinationGenerator_noReps<char>::GenerateAllCombinations(unsigned int) const'
+          with
+          [
+              _Kty=char
+          ]
+  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib.tests\combinationgenerator_noreps.cpp(110): note: see reference to function template instantiation 'std::set<std::set<char,std::less<_Kty>,std::allocator<char>>,std::less<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>,std::allocator<std::set<_Kty,std::less<_Kty>,std::allocator<char>>>> CombinatorialObjects::CombinationGenerator_noReps<char>::GenerateAllCombinations(unsigned int) const' being compiled
+          with
+          [
+              _Kty=char
+          ]
+d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\combinationgenerator_noreps.h(141): error C2039: 'ModifiedGrayCode': is not a member of 'CombinatorialObjects::Extras'
+  d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\codes.h(7): note: see declaration of 'CombinatorialObjects::Extras'
+d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\combinationgenerator_noreps.h(141): error C3861: 'ModifiedGrayCode': identifier not found
+  Generating Code...
