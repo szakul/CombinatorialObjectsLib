@@ -1,6 +1,7 @@
 #pragma once
 
 #include <set>
+#include <list>
 #include <vector>
 #include "CombinatorialObjectsLib.h"
 
@@ -9,92 +10,99 @@ namespace CombinatorialObjects
 	template<typename Type = int>
 	class PermutationGenerator_Lexicographic_noReps
 	{
-		private:
-			std::set<Type> Elements;
+	private:
+		std::set<Type> elements;
 
-			static typename std::vector<Type>::iterator FindLeastElementGreatherThan(typename std::vector<Type>::iterator _begin, typename std::vector<Type>::iterator _end) ;
-			static typename std::vector<Type>::reverse_iterator FindFirstIndexToChange(std::vector<Type>& _Permutation) ;
-		public:
-			PermutationGenerator_Lexicographic_noReps() {}
-			PermutationGenerator_Lexicographic_noReps(std::set<Type> _Elements) { Elements = _Elements; }
-			~PermutationGenerator_Lexicographic_noReps() {}
-			std::vector<Type> GenerateNthPermutation(unsigned long long N) const;
-			std::vector<std::vector<Type>> GenerateAllPermutations() const;
-			std::vector<Type> GenerateRandomPermutation() const;
-			std::vector<Type> GenerateNextPermutation(std::vector<Type> _Permutation) const;
+		static typename std::vector<Type>::iterator FindLeastElementGreatherThan(typename std::vector<Type>::iterator begin, typename std::vector<Type>::iterator end);
+		static typename std::vector<Type>::reverse_iterator FindFirstIndexToChange(std::vector<Type>& permutation);
+	public:
+		PermutationGenerator_Lexicographic_noReps() {}
+		PermutationGenerator_Lexicographic_noReps(std::set<Type> elements) { this->elements = elements; }
+		~PermutationGenerator_Lexicographic_noReps() {}
+		inline unsigned long long NumberOfAllPermutations() const;
+		std::vector<Type> GenerateNthPermutation(unsigned long long n) const;
+		std::vector<std::vector<Type>> GenerateAllPermutations() const;
+		std::vector<Type> GenerateRandomPermutation() const;
+		std::vector<Type> GenerateNextPermutation(const std::vector<Type>& permutation) const;
 	};
 
 	template<typename Type>
-	std::vector<Type> PermutationGenerator_Lexicographic_noReps<Type>::GenerateNthPermutation(unsigned long long N) const
+	inline unsigned long long PermutationGenerator_Lexicographic_noReps<Type>::NumberOfAllPermutations() const
 	{
-		if (N >= Extras::Math::Factorial(Elements.size()))
+		return Math::Factorial(elements.size());
+	}
+
+	template<typename Type>
+	std::vector<Type> PermutationGenerator_Lexicographic_noReps<Type>::GenerateNthPermutation(unsigned long long n) const
+	{
+		using namespace Extras;
+		using namespace NumberRepresentation;
+		if (n >= NumberOfAllPermutations())
 			throw std::invalid_argument("N is too large");
 
-		std::vector<Type> _Permutation;
-		std::vector<Type> _Elements = std::vector<Type>(Elements.begin(), Elements.end());
-		Extras::NumberRepresentation::NaturalNumberRepresentation A(N, Elements.size(), new Extras::NumberRepresentation::Factoradic());
-		InversionTable _InversionTable;
+		std::vector<Type> permutation;
+		std::vector<Type> elements = std::vector<Type>(this->elements.begin(), this->elements.end());
+		NaturalNumberRepresentation inversionTable(n, elements.size(), new Factoradic());
 		std::vector<Type>::iterator it;
 
-		for (int index = A.length() - 1; index >= 0; index--)
+		for (int index = inversionTable.length() - 1; index >= 0; index--)
 		{
-			it = _Elements.begin() + A[index];
-			_Permutation.push_back(*it);
-			_Elements.erase(it);
+			it = elements.begin() + inversionTable[index];
+			permutation.push_back(*it);
+			elements.erase(it);
 		}
-
-		return _Permutation;
+		return permutation;
 	}
 
 	template<typename Type>
 	std::vector<Type> PermutationGenerator_Lexicographic_noReps<Type>::GenerateRandomPermutation() const
 	{
-		return GenerateNthPermutation(rand() % Extras::Math::Factorial(Elements.size()));
+		return GenerateNthPermutation(rand() % NumberOfAllPermutations());
 	}
 
 	template<typename Type>
 	std::vector<std::vector<Type>>  PermutationGenerator_Lexicographic_noReps<Type>::GenerateAllPermutations() const
 	{
-		std::vector<Type> NextPermutation = std::vector<Type>(Elements.begin(), Elements.end());
-		std::vector<std::vector<Type>> PermutationsVector = { NextPermutation };
-		for (unsigned long long i = 0; i < Extras::Math::Factorial(Elements.size()) - 1; i++)
+		std::vector<Type> nextPermutation = std::vector<Type>(elements.begin(), elements.end());
+		std::vector<std::vector<Type>> permutationsVector = { nextPermutation };
+		for (unsigned long long i = 0; i < NumberOfAllPermutations() - 1; i++)
 		{
-			NextPermutation = GenerateNextPermutation(NextPermutation);
-			PermutationsVector.push_back(NextPermutation);
+			nextPermutation = GenerateNextPermutation(nextPermutation);
+			permutationsVector.push_back(nextPermutation);
 		}
-		return PermutationsVector;
+		return permutationsVector;
 	}
 
 	template <typename Type>
-	std::vector<Type> PermutationGenerator_Lexicographic_noReps<Type>::GenerateNextPermutation(std::vector<Type> _Permutation) const
+	std::vector<Type> PermutationGenerator_Lexicographic_noReps<Type>::GenerateNextPermutation(const std::vector<Type>& permutation) const
 	{
-		std::vector<Type> NextPermutation = (std::vector<Type>)_Permutation;
+		std::vector<Type> nextPermutation = permutation;
 		std::vector<Type>::iterator min_index, index;
-		std::vector<Type>::reverse_iterator r_index = FindFirstIndexToChange(NextPermutation);
+		std::vector<Type>::reverse_iterator r_index = FindFirstIndexToChange(nextPermutation);
 
-		if (r_index == NextPermutation.rend())
+		if (r_index == nextPermutation.rend())
 			throw std::invalid_argument("Permutation passed in argument is last permutation");
 
 		index = r_index.base() - 1;
-		min_index = FindLeastElementGreatherThan(index, NextPermutation.end());
+		min_index = FindLeastElementGreatherThan(index, nextPermutation.end());
 		std::iter_swap(index, min_index);
-		std::reverse(index + 1, NextPermutation.end());
-		return NextPermutation;
+		std::reverse(index + 1, nextPermutation.end());
+		return nextPermutation;
 	}
 
 	template<typename Type>
-	typename std::vector<Type>::reverse_iterator PermutationGenerator_Lexicographic_noReps<Type>::FindFirstIndexToChange(std::vector<Type>& _Permutation) 
+	typename std::vector<Type>::reverse_iterator PermutationGenerator_Lexicographic_noReps<Type>::FindFirstIndexToChange(std::vector<Type>& permutation)
 	{
-		std::vector<Type>::reverse_iterator index = _Permutation.rend();
+		std::vector<Type>::reverse_iterator index = permutation.rend();
 		std::vector<Type>::iterator it;
 		Type prev_value;
 
-		if (_Permutation.size() > 1)
+		if (permutation.size() > 1)
 		{
-			index = ++_Permutation.rbegin();
-			prev_value = *(_Permutation.rbegin());
+			index = ++permutation.rbegin();
+			prev_value = *(permutation.rbegin());
 
-			while ((index != _Permutation.rend()) && (*index > prev_value))
+			while ((index != permutation.rend()) && (*index > prev_value))
 			{
 				prev_value = *index;
 				index++;
@@ -104,12 +112,12 @@ namespace CombinatorialObjects
 	}
 
 	template<typename Type>
-	typename std::vector<Type>::iterator PermutationGenerator_Lexicographic_noReps<Type>::FindLeastElementGreatherThan(typename std::vector<Type>::iterator _begin, typename std::vector<Type>::iterator _end) 
+	typename std::vector<Type>::iterator PermutationGenerator_Lexicographic_noReps<Type>::FindLeastElementGreatherThan(typename std::vector<Type>::iterator begin, typename std::vector<Type>::iterator end)
 	{
-		std::vector<Type>::iterator min_it = _begin + 1;
-		for (std::vector<Type>::iterator it = min_it; it != _end; it++)
+		std::vector<Type>::iterator min_it = begin + 1;
+		for (std::vector<Type>::iterator it = min_it; it != end; it++)
 		{
-			if ((*it > *_begin) && (*it < *min_it))
+			if ((*it > *begin) && (*it < *min_it))
 			{
 				min_it = it;
 			}
