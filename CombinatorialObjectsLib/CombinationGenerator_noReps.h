@@ -65,7 +65,7 @@ namespace CombinatorialObjects
 	{
 		std::set<std::set<Type>> Result;
 		std::set<Type> CurrentCombination;
-		std::vector<std::vector<bool>> BinarySequences = Extras::BinarySequences(Elements.size());
+		std::vector<std::vector<bool>> BinarySequences = Extras::NumberRepresentation::BinarySequences(Elements.size());
 
 		for (int i = 0; i < BinarySequences.size(); i++)
 		{
@@ -138,7 +138,7 @@ namespace CombinatorialObjects
 		if (K > Elements.size())
 			throw std::invalid_argument("K is too large");
 
-		BinarySequences = Extras::Codes::ModifiedGrayCode(Elements.size(), K);
+		BinarySequences = Extras::NumberRepresentation::Codes::ModifiedGrayCode(Elements.size(), K);
 		for (std::vector<std::vector<bool>>::iterator it = BinarySequences.begin(); it != BinarySequences.end(); it++)
 		{
 			std::set<Type> NewCombination = GetSubset(Elements, *it);

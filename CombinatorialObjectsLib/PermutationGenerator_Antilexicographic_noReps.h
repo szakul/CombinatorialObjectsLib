@@ -31,13 +31,14 @@ namespace CombinatorialObjects
 
 		std::vector<Type> _Permutation;
 		std::vector<Type> _Elements = std::vector<Type>(Elements.begin(), Elements.end());
-		InversionTable _InversionTable = Extras::Codes::uIntToFactoradic(N, Elements.size());
+		Extras::NumberRepresentation::NaturalNumberRepresentation A(N, Elements.size(), new Extras::NumberRepresentation::Factoradic());
+		//InversionTable _InversionTable = Extras::Codes::uIntToFactoradic(N, Elements.size());
 		std::vector<Type>::iterator it;
 		unsigned int index = 0;
 
-		for (int i = _InversionTable.size() - 1; i >= 0; i--)
+		for (int i = A.length() - 1; i >= 0; i--)
 		{
-			index = _Elements.size() - _InversionTable[i] - 1;
+			index = _Elements.size() - A[i] - 1;
 			it = _Elements.begin() + index;
 			_Permutation.insert(_Permutation.begin(), *it);
 			_Elements.erase(it);

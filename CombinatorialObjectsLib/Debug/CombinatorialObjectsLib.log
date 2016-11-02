@@ -1,6 +1,1 @@
-﻿  Codes.cpp
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\codes.cpp(47): warning C4018: '<=': signed/unsigned mismatch
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\codes.cpp(70): warning C4018: '<': signed/unsigned mismatch
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\codes.cpp(85): warning C4018: '<': signed/unsigned mismatch
-d:\projekt roboczy\projekt - static library\combinatorialobjects\combinatorialobjectslib\codes.cpp(93): warning C4018: '<': signed/unsigned mismatch
-  CombinatorialObjectsLib.vcxproj -> D:\Projekt roboczy\Projekt - static library\CombinatorialObjects\Debug\CombinatorialObjectsLib.lib
+﻿  CombinatorialObjectsLib.vcxproj -> C:\Users\Łukasz Kępka\Source\Repos\CombinatorialObjectsLib\Debug\CombinatorialObjectsLib.lib

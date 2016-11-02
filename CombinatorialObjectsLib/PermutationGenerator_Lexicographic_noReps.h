@@ -2,6 +2,7 @@
 
 #include <set>
 #include <vector>
+#include "CombinatorialObjectsLib.h"
 
 namespace CombinatorialObjects
 {
@@ -31,12 +32,13 @@ namespace CombinatorialObjects
 
 		std::vector<Type> _Permutation;
 		std::vector<Type> _Elements = std::vector<Type>(Elements.begin(), Elements.end());
-		InversionTable _InversionTable = Extras::Codes::uIntToFactoradic(N, Elements.size());
+		Extras::NumberRepresentation::NaturalNumberRepresentation A(N, Elements.size(), new Extras::NumberRepresentation::Factoradic());
+		InversionTable _InversionTable;
 		std::vector<Type>::iterator it;
 
-		for (int index = _InversionTable.size() - 1; index >= 0; index--)
+		for (int index = A.length() - 1; index >= 0; index--)
 		{
-			it = _Elements.begin() + _InversionTable[index];
+			it = _Elements.begin() + A[index];
 			_Permutation.push_back(*it);
 			_Elements.erase(it);
 		}
