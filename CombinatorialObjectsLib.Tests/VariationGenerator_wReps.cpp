@@ -16,10 +16,6 @@ namespace CombinatorialObjectsLibTests
 		END_TEST_CLASS_ATTRIBUTE()
 
 		public:
-			TEST_METHOD(a)
-			{
-				Assert::Fail();
-			}
 			TEST_METHOD(GenerateAllVariations_KHasProperValue_Calculated)
 			{
 				std::set<char> Elements = { 'A', 'B', 'C' };
