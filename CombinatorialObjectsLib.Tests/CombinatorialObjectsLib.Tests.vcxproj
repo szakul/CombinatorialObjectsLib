@@ -75,7 +75,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\Projekt roboczy\Projekt - static library\CombinatorialObjects\CombinatorialObjectsLib;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Łukasz Kępka\Source\Repos\CombinatorialObjectsLib\CombinatorialObjectsLib;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>

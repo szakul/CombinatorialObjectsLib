@@ -2,7 +2,7 @@
 
 using namespace CombinatorialObjects::Extras::NumberRepresentation;
 
-std::vector<unsigned int> NaturalNumbers(unsigned int N)
+std::vector<unsigned int> CombinatorialObjects::Extras::NumberRepresentation::NaturalNumbers(unsigned int N)
 {
 	std::vector<unsigned int> Sequence;
 	for (unsigned int i = 0; i < N; i++)
@@ -12,7 +12,7 @@ std::vector<unsigned int> NaturalNumbers(unsigned int N)
 	return Sequence;
 }
 
-std::vector<std::vector<bool>> BinarySequences(unsigned short NumberOfBits)
+std::vector<std::vector<bool>> CombinatorialObjects::Extras::NumberRepresentation::BinarySequences(unsigned short NumberOfBits)
 {
 	std::vector<std::vector<bool>> BinarySequences;
 	for (int i = 0; i < pow(2, NumberOfBits); i++)

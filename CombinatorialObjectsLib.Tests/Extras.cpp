@@ -42,18 +42,18 @@ namespace CombinatorialObjectsLibTests
 			}
 	};
 
-	TEST_CLASS(Codes_Tests)
-	{
-		public:
-			TEST_METHOD(uIntToBinaryCode_OrdinaryCase_Calculated)
-			{
-				std::vector<bool> Expected_Result = { 0,1,0 };
-				Assert::IsTrue(Codes::uIntToBinaryCode(2, 3) == Expected_Result);
-			}
-			TEST_METHOD(uIntToFactoradic_OrdinaryCase_Calculated)
-			{
-				CombinatorialObjects::InversionTable Expected_Result = {0,1,1};
-				Assert::IsTrue(Codes::uIntToFactoradic(3, 3) == Expected_Result);	
-			}
-	};
+	//TEST_CLASS(Codes_Tests)
+	//{
+	//	public:
+	//		TEST_METHOD(uIntToBinaryCode_OrdinaryCase_Calculated)
+	//		{
+	//			std::vector<bool> Expected_Result = { 0,1,0 };
+	//			Assert::IsTrue(Codes::uIntToBinaryCode(2, 3) == Expected_Result);
+	//		}
+	//		TEST_METHOD(uIntToFactoradic_OrdinaryCase_Calculated)
+	//		{
+	//			CombinatorialObjects::InversionTable Expected_Result = {0,1,1};
+	//			Assert::IsTrue(Codes::uIntToFactoradic(3, 3) == Expected_Result);	
+	//		}
+	//};
 }

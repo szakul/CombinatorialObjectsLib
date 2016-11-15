@@ -7,4 +7,6 @@
 #include "PermutationGenerator_Lexicographic_noReps.h"
 #include "CombinationGenerator_noReps.h"
 #include "VariationGenerator_wReps.h"
+#include "PositionalNumeralSystem.h"
+#include "Factoradic.h"
 

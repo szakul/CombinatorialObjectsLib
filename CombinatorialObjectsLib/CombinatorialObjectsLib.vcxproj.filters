@@ -66,9 +66,6 @@
     <ClInclude Include="PermutationGenerator_Antilexicographic_noReps.h">
       <Filter>Header Files\Generators</Filter>
     </ClInclude>
-    <ClInclude Include="CombinatorialObjectsLib.h">
-      <Filter>Header Files\Generators</Filter>
-    </ClInclude>
     <ClInclude Include="CombinationGenerator_wReps.h">
       <Filter>Header Files\Generators</Filter>
     </ClInclude>
@@ -77,6 +74,9 @@
     </ClInclude>
     <ClInclude Include="Codes.h">
       <Filter>Header Files\Extras\NumberRepresentation</Filter>
+    </ClInclude>
+    <ClInclude Include="CombinatorialObjectsLib.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
