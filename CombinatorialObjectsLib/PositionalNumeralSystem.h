@@ -1,7 +1,7 @@
 #pragma once
 #include "NaturalNumberRepresentation.h"
 
-namespace CombinatorialObjects
+namespace CombinatorialObjectsLib
 {
 	namespace Extras
 	{

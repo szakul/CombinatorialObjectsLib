@@ -1,18 +1,18 @@
 #pragma once
 #include <set>
 
-namespace CombinatorialObjects
+namespace CombinatorialObjectsLib
 {
 	template <typename Type = int>
 	class CombinationGenerator_wReps
 	{
 	private:
 		std::set<Type> Elements;
-	
+
 	public:
-		CombinationGenerator_noReps() {}
-		CombinationGenerator_noReps(std::set<Type> _Elements) : Elements(_Elements) {}
-		~CombinationGenerator_noReps() {}
+		CombinationGenerator_wReps() {}
+		CombinationGenerator_wReps(std::set<Type> _Elements) : Elements(_Elements) {}
+		~CombinationGenerator_wReps() {}
 		size_t NumberOfAllSubsets() const;
 		size_t NumberOfAllCombinations(unsigned int K) const;
 		std::multiset<Type> GenerateNthSubset(unsigned int N) const;
@@ -23,4 +23,5 @@ namespace CombinatorialObjects
 		std::multiset<Type> GenerateRandomCombination(unsigned int K) const;
 
 
-	}; 
+	};
+}

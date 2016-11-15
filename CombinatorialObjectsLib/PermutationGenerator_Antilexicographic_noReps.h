@@ -3,7 +3,7 @@
 #include <set>
 #include <vector>
 
-namespace CombinatorialObjects
+namespace CombinatorialObjectsLib
 {
 	template<typename Type = int>
 	class PermutationGenerator_Antilexicographic_noReps

@@ -3,9 +3,9 @@
 #include <set>
 #include <list>
 #include <vector>
-#include "CombinatorialObjectsLib.h"
+//#include "NumeralSystem.h"
 
-namespace CombinatorialObjects
+namespace CombinatorialObjectsLib
 {
 	template<typename Type = int>
 	class PermutationGenerator_Lexicographic_noReps
@@ -29,7 +29,7 @@ namespace CombinatorialObjects
 	template<typename Type>
 	inline unsigned long long PermutationGenerator_Lexicographic_noReps<Type>::NumberOfAllPermutations() const
 	{
-		return Math::Factorial(elements.size());
+		return CombinatorialObjectsLib::Extras::Math::Factorial(elements.size());
 	}
 
 	template<typename Type>

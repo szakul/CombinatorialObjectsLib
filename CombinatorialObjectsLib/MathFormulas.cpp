@@ -1,7 +1,7 @@
 #include "MathFormulas.h"
 #include <iostream>
 
-using namespace CombinatorialObjects::Extras;
+using namespace CombinatorialObjectsLib::Extras;
 
 unsigned int Math::NewtonSymbol(unsigned int N, unsigned int K)
 {

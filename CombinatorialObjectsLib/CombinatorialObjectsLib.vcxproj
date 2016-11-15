@@ -139,6 +139,7 @@
     <ClInclude Include="CombinationGenerator_wReps.h" />
     <ClInclude Include="CombinatorialObjectsLib.h" />
     <ClInclude Include="Factoradic.h" />
+    <ClInclude Include="Header.h" />
     <ClInclude Include="MathFormulas.h" />
     <ClInclude Include="NaturalNumberRepresentation.h" />
     <ClInclude Include="NumeralSystem.h" />

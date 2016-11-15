@@ -1,7 +1,7 @@
-#include <vector>
 #pragma once
+#include <vector>
 
-namespace CombinatorialObjects
+namespace CombinatorialObjectsLib
 {
 	enum Mode {noRepetitions, withRepetitions};
 	typedef std::vector<unsigned int> InversionTable;

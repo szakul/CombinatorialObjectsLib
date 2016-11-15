@@ -1,4 +1,2 @@
-﻿  CombinatorialObjectsExe.cpp
-c:\users\łukasz kępka\source\repos\combinatorialobjectslib\combinatorialobjectsexe\combinatorialobjectsexe.cpp(47): warning C4715: 'rek': not all control paths return a value
-  CombinatorialObjectsExe.vcxproj -> C:\Users\Łukasz Kępka\Source\Repos\CombinatorialObjectsLib\Debug\CombinatorialObjectsExe.exe
-  CombinatorialObjectsExe.vcxproj -> C:\Users\Łukasz Kępka\Source\Repos\CombinatorialObjectsLib\Debug\CombinatorialObjectsExe.pdb (Full PDB)
+﻿  CombinatorialObjectsExe.vcxproj -> D:\Programowanie\C++\CombinatorialObjectsLib\Debug\CombinatorialObjectsExe.exe
+  CombinatorialObjectsExe.vcxproj -> D:\Programowanie\C++\CombinatorialObjectsLib\Debug\CombinatorialObjectsExe.pdb (Full PDB)
