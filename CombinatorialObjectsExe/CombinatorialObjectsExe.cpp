@@ -2,9 +2,10 @@
 //
 
 #include "stdafx.h"
-#include "CombinatorialObjectsLib.h"
 #include <set>
 #include <string>
+#include <vector>
+#include "CombinatorialObjectsLib.h"
 
 template <typename Type>
 void show(std::vector<Type> A)
@@ -46,10 +47,22 @@ int rek(int i)
 	std::cout << rek(i - 1) << std::endl;
 }
 
-
+//#include "Header.h"
 
 int main()
 {
+	using namespace CombinatorialObjectsLib::Extras::NumberRepresentation;
+	std::set<char> elements = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' };
+	CombinatorialObjectsLib::VariationGenerator_wReps<char> V(elements);
+	show(V.GenerateAllVariations(4));
+	
+	NumeralSystem* a = new Factoradic();
+	NaturalNumberRepresentation A(15, 10, new BinaryNumeralSystem());
+	for (int i = 9; i >= 0; i--)
+	{
+		std::cout << A[i] << " ";
+	}
+
 	system("pause");
     return 0;
 }

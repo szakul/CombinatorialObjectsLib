@@ -1,7 +1,7 @@
 #include "NaturalNumberRepresentation.h"
 #include "PositionalNumeralSystem.h"
 
-using namespace CombinatorialObjects::Extras::NumberRepresentation;
+using namespace CombinatorialObjectsLib::Extras::NumberRepresentation;
 
 NaturalNumberRepresentation::NaturalNumberRepresentation(unsigned long value, size_t min_length, NumeralSystem* numeralSystem)
 {

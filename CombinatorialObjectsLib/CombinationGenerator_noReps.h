@@ -1,7 +1,7 @@
 #pragma once
 #include <set>
 
-namespace CombinatorialObjects
+namespace CombinatorialObjectsLib
 {
 	template <typename Type = int>
 	class CombinationGenerator_noReps

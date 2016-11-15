@@ -1,7 +1,7 @@
 #include "Factoradic.h"
 #include "MathFormulas.h"
 
-using namespace CombinatorialObjects::Extras::NumberRepresentation;
+using namespace CombinatorialObjectsLib::Extras::NumberRepresentation;
 
 std::vector<unsigned int> Factoradic::getRepresentation(unsigned long N)
 {

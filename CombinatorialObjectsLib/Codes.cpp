@@ -1,8 +1,8 @@
 #include "Codes.h"
 
-using namespace CombinatorialObjects::Extras::NumberRepresentation;
+using namespace CombinatorialObjectsLib::Extras::NumberRepresentation;
 
-std::vector<unsigned int> CombinatorialObjects::Extras::NumberRepresentation::NaturalNumbers(unsigned int N)
+std::vector<unsigned int> CombinatorialObjectsLib::Extras::NumberRepresentation::NaturalNumbers(unsigned int N)
 {
 	std::vector<unsigned int> Sequence;
 	for (unsigned int i = 0; i < N; i++)
@@ -12,7 +12,7 @@ std::vector<unsigned int> CombinatorialObjects::Extras::NumberRepresentation::Na
 	return Sequence;
 }
 
-std::vector<std::vector<bool>> CombinatorialObjects::Extras::NumberRepresentation::BinarySequences(unsigned short NumberOfBits)
+std::vector<std::vector<bool>> CombinatorialObjectsLib::Extras::NumberRepresentation::BinarySequences(unsigned short NumberOfBits)
 {
 	std::vector<std::vector<bool>> BinarySequences;
 	for (int i = 0; i < pow(2, NumberOfBits); i++)
@@ -55,9 +55,9 @@ std::vector<bool> Codes::uIntToBinaryCode(unsigned int N, size_t NumberOfBits)
 	return BoolVector;
 }
 
-CombinatorialObjects::InversionTable Codes::uIntToFactoradic(unsigned int N, size_t TableLength)
+CombinatorialObjectsLib::InversionTable Codes::uIntToFactoradic(unsigned int N, size_t TableLength)
 {
-	CombinatorialObjects::InversionTable Numbers = _algorithm_uIntToFactoradic(N);
+	CombinatorialObjectsLib::InversionTable Numbers = _algorithm_uIntToFactoradic(N);
 	Numbers.resize(TableLength, 0);
 	return Numbers;
 }

@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 
-namespace CombinatorialObjects
+namespace CombinatorialObjectsLib
 {
 	namespace Extras
 	{

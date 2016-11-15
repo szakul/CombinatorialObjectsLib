@@ -1,6 +1,6 @@
 #pragma once
 
-namespace CombinatorialObjects
+namespace CombinatorialObjectsLib
 {
 	namespace Extras
 	{

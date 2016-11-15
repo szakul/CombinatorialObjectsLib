@@ -1,7 +1,7 @@
 #pragma once
 #include "NumeralSystem.h"
 
-namespace CombinatorialObjects
+namespace CombinatorialObjectsLib
 {
 	namespace Extras
 	{

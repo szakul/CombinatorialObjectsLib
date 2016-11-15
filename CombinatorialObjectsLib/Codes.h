@@ -2,7 +2,7 @@
 #include <vector>
 #include "Types.h"
 
-namespace CombinatorialObjects
+namespace CombinatorialObjectsLib
 {
 	namespace Extras
 	{
