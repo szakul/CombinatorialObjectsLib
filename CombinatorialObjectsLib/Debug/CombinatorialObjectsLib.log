@@ -1,1 +1,14 @@
-﻿  CombinatorialObjectsLib.vcxproj -> C:\Users\Łukasz Kępka\Source\Repos\CombinatorialObjectsLib\Debug\CombinatorialObjectsLib.lib
+﻿  NaturalNumberRepresentation.cpp
+c:\users\łukasz kępka\desktop\nowy folder\combinatorialobjectslib\combinatorialobjectslib\positionalnumeralsystem.h(66): warning C4244: 'return': conversion from 'double' to 'unsigned long', possible loss of data
+  c:\users\łukasz kępka\desktop\nowy folder\combinatorialobjectslib\combinatorialobjectslib\positionalnumeralsystem.h(65): note: while compiling class template member function 'unsigned long CombinatorialObjectsLib::Extras::NumberRepresentation::PositionalNumeralSystem<10>::getWeight(unsigned int)'
+  c:\users\łukasz kępka\desktop\nowy folder\combinatorialobjectslib\combinatorialobjectslib\naturalnumberrepresentation.cpp(18): note: see reference to class template instantiation 'CombinatorialObjectsLib::Extras::NumberRepresentation::PositionalNumeralSystem<10>' being compiled
+  MathFormulas.cpp
+  Factoradic.cpp
+c:\users\łukasz kępka\desktop\nowy folder\combinatorialobjectslib\combinatorialobjectslib\factoradic.cpp(21): warning C4244: 'return': conversion from 'unsigned __int64' to 'unsigned long', possible loss of data
+  Codes.cpp
+c:\users\łukasz kępka\desktop\nowy folder\combinatorialobjectslib\combinatorialobjectslib\codes.cpp(47): warning C4018: '<=': signed/unsigned mismatch
+c:\users\łukasz kępka\desktop\nowy folder\combinatorialobjectslib\combinatorialobjectslib\codes.cpp(70): warning C4018: '<': signed/unsigned mismatch
+c:\users\łukasz kępka\desktop\nowy folder\combinatorialobjectslib\combinatorialobjectslib\codes.cpp(85): warning C4018: '<': signed/unsigned mismatch
+c:\users\łukasz kępka\desktop\nowy folder\combinatorialobjectslib\combinatorialobjectslib\codes.cpp(93): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  CombinatorialObjectsLib.vcxproj -> C:\Users\Łukasz Kępka\Desktop\Nowy folder\CombinatorialObjectsLib\Debug\CombinatorialObjectsLib.lib
