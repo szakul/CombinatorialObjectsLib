@@ -5,7 +5,7 @@
 #include <set>
 #include <string>
 #include <vector>
-#include "CombinatorialObjectsLib.h"
+#include "VariationGenerator_wReps.h"
 
 template <typename Type>
 void show(std::vector<Type> A)
@@ -51,18 +51,24 @@ int rek(int i)
 
 int main()
 {
-	using namespace CombinatorialObjectsLib::Extras::NumberRepresentation;
-	std::set<char> elements = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' };
-	CombinatorialObjectsLib::VariationGenerator_wReps<char> V(elements);
-	show(V.GenerateAllVariations(4));
-	
-	NumeralSystem* a = new Factoradic();
-	NaturalNumberRepresentation A(15, 10, new BinaryNumeralSystem());
-	for (int i = 9; i >= 0; i--)
-	{
-		std::cout << A[i] << " ";
-	}
+	using namespace CombinatorialObjectsLib;
+	//std::set<char> elements = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' };
+	//CombinatorialObjectsLib::VariationGenerator_wReps<char> V(elements);
+	//show(V.GenerateAllVariations(4));
+	//
+	//NumeralSystem* a = new Factoradic();
+	//NaturalNumberRepresentation A(15, 10, new BinaryNumeralSystem());
+	//for (int i = 9; i >= 0; i--)
+	//{
+	//	std::cout << A[i] << " ";
+	//}
 
+	std::set<char> Elements = { 'A', 'B', 'C' };
+	std::vector<char> Variation = { 'C', 'C', 'C', 'C' };
+	VariationGenerator_wReps<char> Generator(Elements);
+	std::set<char>::reverse_iterator it = Elements.rbegin();
+	std::cout << *it << std::endl;
+	Generator.GenerateNextVariation(Variation, 4);
 	system("pause");
     return 0;
 }

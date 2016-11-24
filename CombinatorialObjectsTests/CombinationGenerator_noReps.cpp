@@ -8,7 +8,7 @@
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace CombinatorialObjectsLib;
 
-namespace UnitTest1
+namespace CombinatorialObjectsTests
 {
 	TEST_CLASS(CombinationGenerator_noReps_Tests)
 	{

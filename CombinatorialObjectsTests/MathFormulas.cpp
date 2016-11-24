@@ -10,7 +10,7 @@
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace CombinatorialObjectsLib::Extras;
 
-namespace CombinatorialObjectsLibTests
+namespace CombinatorialObjectsTests
 {
 	TEST_CLASS(MathFormulas_Tests)
 	{

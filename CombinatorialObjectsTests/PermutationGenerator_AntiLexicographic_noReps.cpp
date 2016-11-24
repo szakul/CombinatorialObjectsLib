@@ -9,7 +9,7 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace CombinatorialObjectsLib;
 using namespace CombinatorialObjectsLib::Extras;
 
-namespace CombinatorialObjectsLibTests
+namespace CombinatorialObjectsTests
 {
 	TEST_CLASS(PermutationGenerator_AntiLexicographic_noRepetitions_Tests)
 	{

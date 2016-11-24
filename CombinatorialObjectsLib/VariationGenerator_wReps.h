@@ -8,39 +8,36 @@ namespace CombinatorialObjectsLib
 	template <typename Type = int>
 	class VariationGenerator_wReps
 	{
-		private:
-			std::set<Type> Elements;
-		public:
-			VariationGenerator_wReps() {}
-			VariationGenerator_wReps(std::set<Type> _Elements) : Elements(_Elements) {}
-			~VariationGenerator_wReps() {}
-			unsigned long long NumberOfAllVariations(unsigned int K) const { return pow(Elements.size(), K); }
-			//size_t NumberOfAllVariations() const;
-			//std::vector<Type> GenerateNthVariation(unsigned int N) const;
-			std::vector<Type> GenerateNthVariation(unsigned int N, unsigned int K) const;
-			//std::vector<Type> GenerateNextVariation(std::vector<Type> PreviousVariation) const;
-			std::vector<Type> GenerateNextVariation(std::vector<Type> PreviousVariation, unsigned int K) const;
-			//std::vector<std::vector<Type>> GenerateAllVariations() const;
-			std::vector<std::vector<Type>> GenerateAllVariations(unsigned int K) const;
-			//std::vector<Type> GenerateRandomVariation() const;
-			std::vector<Type> GenerateRandomVariation(unsigned int K) const;
+	private:
+		std::set<Type> Elements;
+	public:
+		VariationGenerator_wReps() {}
+		VariationGenerator_wReps(std::set<Type> _Elements) : Elements(_Elements) {}
+		~VariationGenerator_wReps() {}
+		unsigned long long NumberOfAllVariations(unsigned int K) const { return pow(Elements.size(), K); }
+		//size_t NumberOfAllVariations() const;
+		//std::vector<Type> GenerateNthVariation(unsigned int N) const;
+		std::vector<Type> GenerateNthVariation(unsigned int N, unsigned int K) const;
+		//std::vector<Type> GenerateNextVariation(std::vector<Type> PreviousVariation) const;
+		std::vector<Type> GenerateNextVariation(std::vector<Type> PreviousVariation, unsigned int K) const;
+		//std::vector<std::vector<Type>> GenerateAllVariations() const;
+		std::vector<std::vector<Type>> GenerateAllVariations(unsigned int K) const;
+		//std::vector<Type> GenerateRandomVariation() const;
+		std::vector<Type> GenerateRandomVariation(unsigned int K) const;
 	};
 
 	template <typename Type>
 	std::vector<std::vector<Type>> VariationGenerator_wReps<Type>::GenerateAllVariations(unsigned int K) const
 	{
 		std::vector<std::vector<Type>> Result;
+		std::vector<Type> NewSequence;
 
-		if (K > Elements.size())
-			throw std::invalid_argument("K is too large");
-
-	
-		for (std::set<char>::iterator it = Elements.begin(); it != Elements.end(); it++) //First iteration
+		if (Elements.size() > 0)
 		{
-			Result.push_back(std::vector<char>(1, *it));
-		}
-
-
+			for (std::set<char>::iterator it = Elements.begin(); it != Elements.end(); it++) //First iteration
+			{
+				Result.push_back(std::vector<char>(1, *it));
+			}
 			for (int i = 1; i < K; i++)
 			{
 				std::vector<std::vector<Type>> NewSequences;
@@ -48,7 +45,7 @@ namespace CombinatorialObjectsLib
 				{
 					for (std::set<char>::iterator it2 = Elements.begin(); it2 != Elements.end(); it2++)
 					{
-						std::vector<Type> NewSequence(*it1);
+						NewSequence = *it1;
 						NewSequence.push_back(*it2);
 						NewSequences.push_back(NewSequence);
 					}
@@ -56,6 +53,11 @@ namespace CombinatorialObjectsLib
 				Result = NewSequences;
 				NewSequences.clear();
 			}
+		}
+		else
+		{
+			Result.push_back(NewSequence);
+		}
 		return Result;
 	}
 
@@ -67,10 +69,8 @@ namespace CombinatorialObjectsLib
 		size_t Size = Elements.size();
 		typename std::set<Type>::iterator it_element;
 
-		if(N >= NumberOfAllVariations(K))
+		if (N >= NumberOfAllVariations(K))
 			throw std::invalid_argument("N is too large");
-		//if(K > Size)
-		//	throw std::invalid_argument("K is too large");
 
 		if (Size != 0)
 		{
@@ -93,7 +93,7 @@ namespace CombinatorialObjectsLib
 		typename std::set<Type>::reverse_iterator max_element = Elements.rbegin();
 		typename std::vector<Type>::reverse_iterator it = PreviousVariation.rbegin();
 
-		while (*it == *max_element)
+		while (it != PreviousVariation.rend() && *it == *max_element)
 		{
 			*it++ = *Elements.begin();
 		}
@@ -103,8 +103,11 @@ namespace CombinatorialObjectsLib
 			it1 = Elements.find(*it);
 			*it = *++it1;
 		}
+		else
+		{
+			throw std::invalid_argument("Variation passed in argument is last variation");
+		}
 		return PreviousVariation;
-
 	}
 
 	template <typename Type>

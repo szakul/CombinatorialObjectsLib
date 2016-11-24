@@ -9,7 +9,7 @@
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace CombinatorialObjectsLib;
 
-namespace CombinatorialObjectsLibTests
+namespace CombinatorialObjectsTests
 {
 	TEST_CLASS(VariationGenerator_wReps_Tests)
 	{
@@ -40,7 +40,7 @@ namespace CombinatorialObjectsLibTests
 		TEST_METHOD(GenerateAllVariations_FromEmptySet_VariationsSetWith1ElementWchichIsEmptyVectorReturned)
 		{
 			std::set<char> Elements = {};
-			std::vector<std::vector<char>> Expected_Result = { { }, };
+			std::vector<std::vector<char>> Expected_Result = { { } };
 
 			VariationGenerator_wReps<char> Generator(Elements);
 			Assert::IsTrue(Expected_Result == Generator.GenerateAllVariations(0));
